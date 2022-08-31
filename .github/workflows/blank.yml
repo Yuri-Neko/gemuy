@@ -1,0 +1,14 @@
+name : AyGemuy-
+
+on:
+    push:
+      branches: [ master ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Bot Whatsapp Hinata
+         run: |
+           git clone https://github.com/Yuri-Neko/AyGemuy- && sudo apt install ffmpeg imagemagick -y && cd AyGemuy- && npm install && npm start
